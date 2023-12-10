@@ -9,10 +9,12 @@ Roll* Shooter::throw_die(Die& die1, Die& die2)
     return r;
 }
 
-std::ostream& operator<<(std::ostream& os, const Roll& r)
+void Shooter::display_all_rolls()
 {
-    os << r;
-    return os;
+    for(auto instance : rolls)
+    {
+        std::cout << instance->roll_value() << "\n";
+    }
 }
 
 Shooter::~Shooter()

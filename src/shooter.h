@@ -6,12 +6,13 @@
 
 #ifndef SHOOTER_H
 #define SHOOTER_H
+#include <iostream>
 
 class Shooter
 {
 public:
     Roll* throw_die(Die& die1, Die& die2);
-    friend std::ostream& operator<<(std::ostream& os, const Roll& r);
+    void display_all_rolls();
     ~Shooter();
 private:
     std::vector<Roll*> rolls;

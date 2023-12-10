@@ -3,6 +3,8 @@
 #include "die.h"
 #include "roll.h"
 #include "shooter.h"
+#include "come_out_phase.h"
+#include "point_phase.h"
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
@@ -41,4 +43,8 @@ TEST_CASE("Verify Shooter Class"){
 		REQUIRE(throwVal >= 2);
 		REQUIRE(throwVal <= 12);
 	}
+}
+
+TEST_CASE("Verify ComeOutPhase and PointPhase Classes"){
+	
 }
